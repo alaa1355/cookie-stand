@@ -1,16 +1,6 @@
 'use strict';
 
-/*
-Location	         Min / Cust	                     Max / Cust	                        Avg Cookie / Sale
- Seattle              	23	                            65	                                    6.3
- Tokyo	                3	                              24                                    	1.2
- Dubai	                11	                            38                                     	3.7
- Paris	                20	                            38                                    	2.3
- Lima	                  2	                              16	                                    4.6
-
-*/
-
-var operatingHours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
+var operatingHours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm', '8 pm'];
 
 var locationDetailsArray = [];
 
@@ -24,18 +14,20 @@ function LocationDetails(locationName, minCustomersHourly, avgPerCustHourly, max
     this.totalSalesDaily = totalSalesDaily;
 }
 
-//////////////////////With help from Saurav Kadaria////////////////////////////////
-var location1 = new LocationDetails('Seattle', 23, 6.3, 65, [], [], 0);
+//With help from Saurav Kadaria
+var location1 = new LocationDetails('First and Pike', 23, 6.3, 65, [], [], 0);
 locationDetailsArray.push(location1);
-var location2 = new LocationDetails('Tokyo', 3, 1.2, 24, [], [], 0);
+var location2 = new LocationDetails('SeaTac Airport', 3, 1.2, 24, [], [], 0);
 locationDetailsArray.push(location2);
-var location3 = new LocationDetails('Dubai', 11, 3.7, 38, [], [], 0);
+var location3 = new LocationDetails('Seattle Center', 11, 3.7, 38, [], [], 0);
 locationDetailsArray.push(location3);
-var location4 = new LocationDetails('Paris', 20, 2.3, 38, [], [], 0);
+var location4 = new LocationDetails('Capitol Hill', 20, 2.3, 38, [], [], 0);
 locationDetailsArray.push(location4);
-var location5 = new LocationDetails('Lima', 2, 4.6, 16, [], [], 0);
+var location5 = new LocationDetails('Alki', 2, 4.6, 16, [], [], 0);
 locationDetailsArray.push(location5);
-///////////////////Following codes have been referenced from Samer class/////////////
+
+
+//Following codes have been referenced from Sam's class lectures
 LocationDetails.prototype.calculateRandomCustomersHourly = function () {
     for (var i = 0; i < operatingHours.length; i++) {
         this.randomCustomersHourly.push(randomNumberGenerator(this.minCustomersHourly, this.maxCustomersHourly));
@@ -71,6 +63,7 @@ function calculateAllStoresHourly() {
     }
     totalSalesHourly.push(salesTotalHourly);
 }
+
 //Create Handlers for all parameteres:
 
 function handleInputs(event) {
@@ -100,6 +93,8 @@ function handleInputs(event) {
 }
 var newStore = document.getElementById('new-store');
 newStore.addEventListener('submit', handleInputs);
+
+
 
 //With assistance from Dana
 function timeHeader() {
@@ -159,4 +154,3 @@ for (var i = 0; i < locationDetailsArray.length; i++) {
 calculateAllStoresHourly();
 timeHeader();
 fillWithCookies();
-
