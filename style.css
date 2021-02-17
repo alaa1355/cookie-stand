@@ -1,59 +1,152 @@
 
-/* add lab: 06 */
 
-*{
-    box-sizing:border-box;
+ 
+  
+  h1{
+    font-size: 3%;
+    color: rgb(17, 5, 131);
+    float: left;
+    margin-left: 0%;
+    margin-right: 80%;
   }
-  body {
-    font-family: 'Grandstander', cursive;
+  
+ 
+  
+
+
+  
+  
+  h1{
+    font-size: 180%;
+    color: rgb(216, 95, 15);
+    float: right;
+    margin-left: 0%;
+    margin-right: 20%;
+    text-align: center;
   }
   
   header{
-    background-color: #4183e6;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px;
+    border-style: line solid;
   }
   
-  header nav{
+  #leftImage{
+    float: left;
+  }
+  
+  #rightImage{
     float: right;
-    padding: 0 50px;
   }
   
-  header nav ul li{
+  #headerControl{
+  display: inline-block;
+  align-content: space-between;
+  }
+  #rightImage, #leftImage{
+    height: 20%;
+    width: 20%;
+  }
+  
+  
+  #navMenu {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+  }
+  .navigation{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+  
+  h4{
+    font-style: italic;
+    font-size: 105%;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 400px;
+    background-color: azure;
+  }
+  
+  #familyPic{
+    width:95%;
+    height:95%;
+  }
+  #familyPicture{
+    margin-top: 0;
+    float: right;
+    width: 400px;
     display: inline-block;
-    padding: 0 30px;
   }
-  header nav ul li a{
-    text-decoration: none;
-    color: #f5f5f5;
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-/*   
-  div {
-    padding: 70px; */
-   
-  footer{
-    clear: both;
-    width: 100%;
-    text-align: center;
-    background-color: #4183e6;
-    color: #f5f5f5;
-    padding: 20px;
-  } 
-
-
   
-/* 
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  #cookieIntro{
+    font-size: 25px;
+    width: 620px;
+    height: 180px; 
   }
-  th, td {
-    padding: 5px;
+  
+  #cookieKnowledge{
+    color: rgb(17, 11, 99);
+    font-size: 25px;
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom: 6px;
   }
-  th {
-    text-align: left;
-  } */
+  
+  #merchandise{
+    width: 200px;
+    height: 200px;
+  }
+  
+  #funFacts{
+    color:rgb(59, 25, 25);
+    font-size: 23px;
+    width: 500px;
+  }
+  
+  #History{
+    font-style: oblique;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-top:0;
+    margin-left: 130px;
+    margin-right: 0;
+    width: 400px;
+    height: 200px;
+  }
+  
+  #secondPara{
+    font-size: 22px;
+    display: inline-flex;
+  }
+  #merchandise{
+    display: inline-flex;
+  }
+  
+  #fishSticker{
+    float: left;
+    margin-right: 10px;
+  }
+  #logo{
+    float: right;
+    margin-right: 10px;
+  }
+  #tshirt{
+    float: right;
+  }
+  #headerMerchandise{
+  font-size: 20px;
+  }
+  
+  #cookiesTag{
+    font-size: 20px;
+  }
+  
+  #locationTag{
+    font-size:23px;
+  }
+  
+  #contactDetails{
+    font-size:20px;
+  }
