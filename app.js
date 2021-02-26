@@ -10,6 +10,17 @@ Location	         Min / Cust	                     Max / Cust	                   
 
 */
 
+//constructor function 
+// Constructor function for Person objects
+function Person(first, last, age, Alaa) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.Alaa = Alaa;
+  }
+  
+ 
+
 var operatingHours = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
 
 var locationDetailsArray = [];
