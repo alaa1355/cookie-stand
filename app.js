@@ -46,7 +46,7 @@ var location4 = new LocationDetails('Paris', 20, 2.3, 38, [], [], 0);
 locationDetailsArray.push(location4);
 var location5 = new LocationDetails('Lima', 2, 4.6, 16, [], [], 0);
 locationDetailsArray.push(location5);
-///////////////////Following codes have been referenced from Samer class/////////////
+
 LocationDetails.prototype.calculateRandomCustomersHourly = function () {
     for (var i = 0; i < operatingHours.length; i++) {
         this.randomCustomersHourly.push(randomNumberGenerator(this.minCustomersHourly, this.maxCustomersHourly));
